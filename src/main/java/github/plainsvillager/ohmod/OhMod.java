@@ -5,6 +5,7 @@
 package github.plainsvillager.ohmod;
 
 import github.plainsvillager.ohmod.item.ModItemReg;
+import github.plainsvillager.ohmod.item.enchantment.CarEnchantment;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.common.MinecraftForge;
@@ -23,8 +24,12 @@ public class OhMod {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         MinecraftForge.EVENT_BUS.register(this);
         ModItemReg.ITEMS.register(modEventBus);
+        ModItemReg.ModEnchantmentsReg.ENCHANTMENTS.register(modEventBus);
+
+        //MinecraftForge.EVENT_BUS.register(new CarEnchantment());
 
         // 24个，事雪球（悲
         ObfuscationReflectionHelper.setPrivateValue(Item.class, Items.SNOWBALL, 24, "f_41370_");
+
     }
 }

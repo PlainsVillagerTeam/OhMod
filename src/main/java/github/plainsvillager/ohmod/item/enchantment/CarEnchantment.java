@@ -5,10 +5,14 @@
 package github.plainsvillager.ohmod.item.enchantment;
 
 import github.plainsvillager.ohmod.OhMod;
+import net.minecraft.world.effect.MobEffectInstance;
+import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
-import net.minecraftforge.event.TickEvent;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
+import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 
@@ -34,10 +38,9 @@ public class CarEnchantment extends Enchantment {
     }
 
     @SubscribeEvent
-    public static void tick(TickEvent.PlayerTickEvent event) {
-//        var player = event.player;
-//        player.addEffect(new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 1145, 1, true, true));
+    public static void wear(LivingEquipmentChangeEvent event) {
+        LivingEntity livingEntity = event.getEntity();
+        var tag = event.getTo().getEnchantmentTags();
+
     }
-
-
 }
