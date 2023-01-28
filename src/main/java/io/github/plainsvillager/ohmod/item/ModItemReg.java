@@ -2,11 +2,10 @@
  * Copyright (c) Github PlainsVillagerTeam
  * SPDX-License-Identifier: MIT License
  */
-package github.plainsvillager.ohmod.item;
+package io.github.plainsvillager.ohmod.item;
 
-import github.plainsvillager.ohmod.OhMod;
-import github.plainsvillager.ohmod.item.enchantment.CarEnchantment;
-import net.minecraft.world.item.EnchantedBookItem;
+import io.github.plainsvillager.ohmod.OhMod;
+import io.github.plainsvillager.ohmod.item.enchantment.CarEnchantment;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraftforge.registries.DeferredRegister;

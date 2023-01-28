@@ -2,16 +2,13 @@
  * Copyright (c) Github PlainsVillagerTeam
  * SPDX-License-Identifier: MIT License
  */
-package github.plainsvillager.ohmod.item.enchantment;
+package io.github.plainsvillager.ohmod.item.enchantment;
 
-import github.plainsvillager.ohmod.OhMod;
-import net.minecraft.world.effect.MobEffectInstance;
-import net.minecraft.world.effect.MobEffects;
+import io.github.plainsvillager.ohmod.OhMod;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentCategory;
-import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraftforge.event.entity.living.LivingEquipmentChangeEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
